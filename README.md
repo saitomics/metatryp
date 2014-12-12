@@ -1,4 +1,4 @@
-Saito Lab: Computational Proteomics Tools
+Saito Lab: METATRYP Proteomics Toolkit
 ==============
 
 This repository contains a set of computational tools for analyzing proteomics data.
@@ -26,7 +26,7 @@ Please note that this is *not* designed as a high-performance/high-volume soluti
 
 These instructions assume that you are running within a unix environment that has python2.7 .
 
-1. **Download this Repository**: https://github.com/saitomics/proteomics/archive/master.zip
+1. **Download this Repository**: https://github.com/saitomics/metatryp/archive/master.zip
 1. **Unpack the Repository into a folder**: Unzip it.
 1. **Install virtualenv**: http://www.virtualenv.org/en/latest/virtualenv.html#installation . Note: it may already by installed on your system.
 1. **Create a virtualenv**: Navigate into the unzipped directory you created above. It should contain this README.md file. Then run this command: ````virtualenv py2.7```` . This will create a new python virtual environment directory named 'py2.7'.
