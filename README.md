@@ -211,6 +211,22 @@ WHERE
  taxon.id = 'syn7805'
  AND digest.id = 1
 ````
+
+#### List Peptides for a given taxon digest
+````
+SELECT 
+ taxon.id, protein.id
+FROM
+ taxon_digest_peptide
+ JOIN taxon_digest ON taxon_digest_peptide.taxon_digest_id = taxon_digest.id
+ JOIN taxon ON taxon_digest.taxon_id = taxon.id
+ JOIN digest on taxon_digest.digest_id = digest.id
+WHERE
+ taxon.id = 'syn7805'
+ AND digest.id = 1
+ORDER BY
+ taxon.id
+````
  
 #### Count number of proteins that occur multiple times in a taxon proteome
 ````
