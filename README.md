@@ -225,8 +225,6 @@ FROM
 WHERE
  taxon.id = 'syn7805'
  AND digest.id = 1
-ORDER BY
- taxon.id
 ````
 
 #### List taxa whose digests produce a specific peptide sequence
