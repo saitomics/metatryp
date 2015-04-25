@@ -215,14 +215,32 @@ WHERE
 #### List Peptides for a given taxon digest
 ````
 SELECT 
- taxon.id, protein.id
+ taxon.id, peptide.sequence
 FROM
  taxon_digest_peptide
+ JOIN peptide ON taxon_digest_peptide.peptide_id = peptide.id
  JOIN taxon_digest ON taxon_digest_peptide.taxon_digest_id = taxon_digest.id
  JOIN taxon ON taxon_digest.taxon_id = taxon.id
  JOIN digest on taxon_digest.digest_id = digest.id
 WHERE
  taxon.id = 'syn7805'
+ AND digest.id = 1
+ORDER BY
+ taxon.id
+````
+
+#### List taxa whose digests produce a specific peptide sequence
+````
+SELECT 
+ peptide.sequence, taxon.id
+FROM
+ taxon_digest_peptide
+ JOIN peptide ON taxon_digest_peptide.peptide_id = peptide.id
+ JOIN taxon_digest ON taxon_digest_peptide.taxon_digest_id = taxon_digest.id
+ JOIN taxon ON taxon_digest.taxon_id = taxon.id
+ JOIN digest on taxon_digest.digest_id = digest.id
+WHERE
+ peptide.sequence = 'ATLQP'
  AND digest.id = 1
 ORDER BY
  taxon.id
