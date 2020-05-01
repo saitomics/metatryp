@@ -1,0 +1,7 @@
+name: metatryp1
+channels:
+  - defaults
+dependencies:
+  - python=2.7.18
+  - sqlalchemy=1.3.12
+  - sqlite=3.31.1
