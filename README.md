@@ -23,3 +23,9 @@ The METATRYP software consists of:
 * [Database Schema](https://github.com/saitomics/metatryp/wiki/Database-Schema)
 * [Directly query database via SQL](https://github.com/saitomics/metatryp/wiki/SQL-Query-Examples)
 
+***
+
+For higher volume instance of the METATRYP software with additional features (like Lowest Common Ancestor Analysis), please see **METATRYP v. 2**([https://github.com/WHOIGit/metatryp-2.0](https://github.com/WHOIGit/metatryp-2.0)). A web portal using a marine microbe database can be found at [https://metatryp.whoi.edu/](https://metatryp.whoi.edu/), and a portal using a coronavirus focused database can be found at [https://metatryp-coronavirus.whoi.edu/](https://metatryp-coronavirus.whoi.edu/).
+
+When using METATRYP v. 1 please cite the following:    
+[Saito, M.A., Dorsk, A., Post, A.F., McIlvin, M.R., Rappé, M.S., DiTullio, G.R. and Moran, D.M. (2015), Needles in the blue sea: Sub‐species specificity in targeted protein biomarker analyses within the vast oceanic microbial metaproteome. Proteomics, 15: 3521-3531. doi:10.1002/pmic.201400630](https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201400630)
