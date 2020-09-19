@@ -1,4 +1,4 @@
-# METATRYP v. 1 Documentation
+# METATRYP v. 1.1 Documentation
 These tools are intended to help researchers answer questions about proteomics data. Written in Python 2.7 and implemented on a Unix operating system (linux/macOS).
 
 The METATRYP software consists of:
